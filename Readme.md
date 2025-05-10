@@ -38,7 +38,9 @@ $font-family: 'Arial', sans-serif;
         }
     }
 }
-Mixins (Reusable style blocks):
+```
+
+# 3. Mixins (Reusable style blocks):
 
 ```
 @mixin flex-center {
@@ -66,7 +68,8 @@ Mixins (Reusable style blocks):
 .secondary-button {
     @include button(gray, black);
 }
-Extensions (Share styles):
+```
+# 4. Extensions (Share styles):
 
 ```
 %base-box {
@@ -84,7 +87,8 @@ Extensions (Share styles):
     @extend %base-box;
     background: red;
 }
-Functions and Operations:
+```
+# 5. Functions and Operations:
 
 ```
 @function calculate-width($columns) {
@@ -96,7 +100,8 @@ Functions and Operations:
     padding: 20px + 10px;      // 30px
     margin: 50px / 2;          // 25px
 }
-Media Queries:
+```
+# 6. Media Queries:
 
 ```
 $tablet-width: 768px;
@@ -119,7 +124,8 @@ $desktop-width: 1024px;
         width: 33.33%;
     }
 }
-Import and Partials:
+```
+# 7. Import and Partials:
 
 ```
 // _reset.```
@@ -133,7 +139,8 @@ Import and Partials:
 @import 'reset';
 @import 'variables';
 @import 'mixins';
-Color Functions:
+```
+# 8. Color Functions:
 
 ```
 .button {
@@ -147,7 +154,8 @@ Color Functions:
         background: desaturate($primary-color, 50%);
     }
 }
-Lists and Maps:
+```
+# 9. Lists and Maps:
 
 ```
 $sizes: (
@@ -167,3 +175,4 @@ $theme-colors: #ff0000, #00ff00, #0000ff;
         background-color: $color;
     }
 }
+```
